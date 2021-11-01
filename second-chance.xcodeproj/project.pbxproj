@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6247C695272FABF4006D841B /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247C694272FABF4006D841B /* ProfilePageViewController.swift */; };
 		627342E5272CFFE200AE8250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342E4272CFFE200AE8250 /* AppDelegate.swift */; };
 		627342E7272CFFE200AE8250 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342E6272CFFE200AE8250 /* SceneDelegate.swift */; };
-		627342E9272CFFE200AE8250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342E8272CFFE200AE8250 /* ViewController.swift */; };
 		627342EC272CFFE200AE8250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627342EA272CFFE200AE8250 /* Main.storyboard */; };
 		627342EF272CFFE200AE8250 /* second_chance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 627342ED272CFFE200AE8250 /* second_chance.xcdatamodeld */; };
 		627342F1272CFFE400AE8250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627342F0272CFFE400AE8250 /* Assets.xcassets */; };
 		627342F4272CFFE400AE8250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627342F2272CFFE400AE8250 /* LaunchScreen.storyboard */; };
+		627342FC272D006700AE8250 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342FB272D006700AE8250 /* TableViewController.swift */; };
+		627342FE272D8EBF00AE8250 /* SecondChance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342FD272D8EBF00AE8250 /* SecondChance.swift */; };
+		62734300272F112100AE8250 /* AddFundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342FF272F112100AE8250 /* AddFundViewController.swift */; };
+		62734302272F16A100AE8250 /* CompleteFundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62734301272F16A100AE8250 /* CompleteFundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6247C694272FABF4006D841B /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		627342E1272CFFE200AE8250 /* second-chance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "second-chance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627342E4272CFFE200AE8250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		627342E6272CFFE200AE8250 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		627342E8272CFFE200AE8250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		627342EB272CFFE200AE8250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		627342EE272CFFE200AE8250 /* second_chance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = second_chance.xcdatamodel; sourceTree = "<group>"; };
 		627342F0272CFFE400AE8250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627342F3272CFFE400AE8250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		627342F5272CFFE400AE8250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627342FB272D006700AE8250 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		627342FD272D8EBF00AE8250 /* SecondChance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChance.swift; sourceTree = "<group>"; };
+		627342FF272F112100AE8250 /* AddFundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFundViewController.swift; sourceTree = "<group>"; };
+		62734301272F16A100AE8250 /* CompleteFundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteFundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +68,16 @@
 			children = (
 				627342E4272CFFE200AE8250 /* AppDelegate.swift */,
 				627342E6272CFFE200AE8250 /* SceneDelegate.swift */,
-				627342E8272CFFE200AE8250 /* ViewController.swift */,
 				627342EA272CFFE200AE8250 /* Main.storyboard */,
+				627342FD272D8EBF00AE8250 /* SecondChance.swift */,
 				627342F0272CFFE400AE8250 /* Assets.xcassets */,
 				627342F2272CFFE400AE8250 /* LaunchScreen.storyboard */,
 				627342F5272CFFE400AE8250 /* Info.plist */,
 				627342ED272CFFE200AE8250 /* second_chance.xcdatamodeld */,
+				627342FB272D006700AE8250 /* TableViewController.swift */,
+				627342FF272F112100AE8250 /* AddFundViewController.swift */,
+				62734301272F16A100AE8250 /* CompleteFundViewController.swift */,
+				6247C694272FABF4006D841B /* ProfilePageViewController.swift */,
 			);
 			path = "second-chance";
 			sourceTree = "<group>";
@@ -140,10 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627342E9272CFFE200AE8250 /* ViewController.swift in Sources */,
 				627342E5272CFFE200AE8250 /* AppDelegate.swift in Sources */,
+				62734302272F16A100AE8250 /* CompleteFundViewController.swift in Sources */,
+				627342FE272D8EBF00AE8250 /* SecondChance.swift in Sources */,
 				627342E7272CFFE200AE8250 /* SceneDelegate.swift in Sources */,
+				62734300272F112100AE8250 /* AddFundViewController.swift in Sources */,
+				627342FC272D006700AE8250 /* TableViewController.swift in Sources */,
 				627342EF272CFFE200AE8250 /* second_chance.xcdatamodeld in Sources */,
+				6247C695272FABF4006D841B /* ProfilePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

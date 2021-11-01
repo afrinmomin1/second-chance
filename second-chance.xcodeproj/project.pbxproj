@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6247C695272FABF4006D841B /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247C694272FABF4006D841B /* ProfilePageViewController.swift */; };
+		6247C697272FB794006D841B /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = 6247C696272FB794006D841B /* Roboto */; };
+		6247C69B272FD02F006D841B /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247C69A272FD02F006D841B /* AddProfileViewController.swift */; };
 		627342E5272CFFE200AE8250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342E4272CFFE200AE8250 /* AppDelegate.swift */; };
 		627342E7272CFFE200AE8250 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627342E6272CFFE200AE8250 /* SceneDelegate.swift */; };
 		627342EC272CFFE200AE8250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627342EA272CFFE200AE8250 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		6247C694272FABF4006D841B /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		6247C696272FB794006D841B /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Roboto; path = ../../../Desktop/Roboto; sourceTree = "<group>"; };
+		6247C69A272FD02F006D841B /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
 		627342E1272CFFE200AE8250 /* second-chance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "second-chance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627342E4272CFFE200AE8250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		627342E6272CFFE200AE8250 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		627342E3272CFFE200AE8250 /* second-chance */ = {
 			isa = PBXGroup;
 			children = (
+				6247C696272FB794006D841B /* Roboto */,
 				627342E4272CFFE200AE8250 /* AppDelegate.swift */,
 				627342E6272CFFE200AE8250 /* SceneDelegate.swift */,
 				627342EA272CFFE200AE8250 /* Main.storyboard */,
@@ -78,6 +83,7 @@
 				627342FF272F112100AE8250 /* AddFundViewController.swift */,
 				62734301272F16A100AE8250 /* CompleteFundViewController.swift */,
 				6247C694272FABF4006D841B /* ProfilePageViewController.swift */,
+				6247C69A272FD02F006D841B /* AddProfileViewController.swift */,
 			);
 			path = "second-chance";
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 				627342F4272CFFE400AE8250 /* LaunchScreen.storyboard in Resources */,
 				627342F1272CFFE400AE8250 /* Assets.xcassets in Resources */,
 				627342EC272CFFE200AE8250 /* Main.storyboard in Resources */,
+				6247C697272FB794006D841B /* Roboto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,7 @@
 				62734302272F16A100AE8250 /* CompleteFundViewController.swift in Sources */,
 				627342FE272D8EBF00AE8250 /* SecondChance.swift in Sources */,
 				627342E7272CFFE200AE8250 /* SceneDelegate.swift in Sources */,
+				6247C69B272FD02F006D841B /* AddProfileViewController.swift in Sources */,
 				62734300272F112100AE8250 /* AddFundViewController.swift in Sources */,
 				627342FC272D006700AE8250 /* TableViewController.swift in Sources */,
 				627342EF272CFFE200AE8250 /* second_chance.xcdatamodeld in Sources */,

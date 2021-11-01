@@ -13,22 +13,20 @@ class CompleteFundViewController: UIViewController {
     var selectedFund : FundCD?
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var isFavorite: UISwitch!
+    @IBOutlet weak var displayImage: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = selectedFund?.name
+        descriptionLabel.text = selectedFund?.descrip
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func completeTapped(_ sender: Any) {
-        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            if let theFund = selectedFund{
-                context.delete(theFund)
-                navigationController?.popViewController(animated: true)
-            }
-        }
-    }
+    
     
     /*
     // MARK: - Navigation

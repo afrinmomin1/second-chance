@@ -1,54 +1,35 @@
 //
-//  AddFundViewController.swift
+//  AddProfileViewController.swift
 //  second-chance
 //
-//  Created by Afrin Momin on 10/31/21.
+//  Created by Afrin Momin on 11/1/21.
 //
 
 import UIKit
 
-class AddFundViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    var previousVC = TableViewController()
+class AddProfileViewController: UIViewController {
+
     var imagePicker = UIImagePickerController()
+    @IBOutlet weak var titleText: UITextField!
+    @IBOutlet weak var displayImage: UIImageView!
     
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var descriptionTitleTextField: UITextField!
-    @IBOutlet weak var imageDisplay: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagePicker.delegate = self
+
         // Do any additional setup after loading the view.
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            imageDisplay.image = selectedImage
+            displayImage.image = selectedImage
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
-    
     @IBAction func uploadImageTapped(_ sender: Any) {
         imagePicker.sourceType = .photoLibrary
         
         present(imagePicker, animated: true, completion: nil)
-    }
-    
-    @IBAction func addTapped(_ sender: Any) {
-        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            
-            let fund = FundCD(entity : FundCD.entity(), insertInto: context)
-            
-            if let titleText = titleTextField.text{
-                fund.name = titleText
-                fund.descrip = descriptionTitleTextField.text
-            }
-            
-            try? context.save()
-            
-            navigationController?.popViewController(animated: true)
-        }
     }
     
     /*

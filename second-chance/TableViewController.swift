@@ -47,13 +47,12 @@ class TableViewController: UITableViewController {
         
         let funds = funds[indexPath.row]
         
-        if let name = funds.name {
-            if funds.favorite {
-                cell.textLabel?.text = "‼️" + name
-            } else {
-                cell.textLabel?.text = funds.name
-            }
-        }
+        let name = funds.name
+        cell.textLabel?.text = name
+        
+        let description = funds.description
+        cell.textLabel?.text = description
+
         // Configure the cell...
 
         return cell

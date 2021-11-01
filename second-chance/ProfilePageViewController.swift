@@ -9,9 +9,12 @@ import UIKit
 
 class ProfilePageViewController: UIViewController {
 
+    @IBOutlet weak var circularImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        circularImageView.layer.cornerRadius = circularImageView.frame.size.width/2
+        circularImageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
